@@ -1,6 +1,6 @@
 # Wiki Index
 
-> Master index for Brendan's Work KB. 41 articles across 10 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
+> Master index for Brendan's Work KB. 42 articles across 10 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
 
 ## By Topic
 
@@ -32,6 +32,7 @@ Cloudflare's AI platform, MCP at scale, and agents-as-infrastructure.
 - [[Cloudflare AI Platform Unified Inference Layer]] — the inference layer designed for agents
 - [[Cloudflare MCP Enterprise Reference Architecture]] — Code Mode and safer/cheaper enterprise MCP
 - [[Project Think Agents as Infrastructure]] — next-gen Agents SDK; why serverless (not containers) is the right base
+- [[EmDash CMS]] — Cloudflare's Astro-native CMS: safer plugins, WordPress migration, and agent-operable content
 
 ### Design-to-Dev
 Pipelines and audit frameworks for the design → development handoff.
@@ -72,4 +73,4 @@ Automation platforms and concrete workflows.
 - [[YOYOYO Nano Banana Pro Case Study]] — PORTO ROCHA × Google DeepMind's brand-launch stress-test of Nano Banana Pro
 
 ---
-last_updated: 2026-06-05
+last_updated: 2026-06-06
