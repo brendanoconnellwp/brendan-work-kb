@@ -13,6 +13,9 @@ desktop.ini
 # Build artifacts
 node_modules/
 
+# Local-only leak-check script — contains real client/teammate names, never commit
+leak-check.ps1
+
 
 # Raw research corpus — lives locally only, never pushed.
 # These are source materials (fetched articles, notes, videos).
