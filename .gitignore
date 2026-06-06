@@ -1,0 +1,29 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/obsidian-git/data.json
+.trash/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+node_modules/
+
+
+# Raw research corpus — lives locally only, never pushed.
+# These are source materials (fetched articles, notes, videos).
+# The compiled wiki/ articles are what gets committed.
+raw/articles/*
+raw/notes/*
+raw/videos/*
+raw/clippings/*
+raw/images/*
+raw/daily/*
+
+# Keep folder structure and README files
+!raw/**/README.md
+!raw/**/.gitkeep
