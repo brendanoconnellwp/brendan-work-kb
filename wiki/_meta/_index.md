@@ -1,6 +1,6 @@
 # Wiki Index
 
-> Master index for Brendan's Work KB. 42 articles across 10 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
+> Master index for Brendan's Work KB. 43 articles across 10 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
 
 ## By Topic
 
@@ -37,6 +37,7 @@ Cloudflare's AI platform, MCP at scale, and agents-as-infrastructure.
 ### Design-to-Dev
 Pipelines and audit frameworks for the design → development handoff.
 - [[Figma MCP Design-to-Code Pipeline]] — connecting design tools to dev tools so handoff stops being a bottleneck
+- [[Figma Console MCP Design System API]] — treating Figma design systems as queryable/writable APIs for tokens, components, audits, and parity
 - [[Claude-Powered Dev Workflows]] — Claude Code as part of the agency dev workflow
 - [[Agency Workflow Audit Framework]] — how to run a real audit of the design-to-dev pipeline
 - [[Workflow Audit Deep Dive]] — the complete audit playbook
@@ -73,4 +74,4 @@ Automation platforms and concrete workflows.
 - [[YOYOYO Nano Banana Pro Case Study]] — PORTO ROCHA × Google DeepMind's brand-launch stress-test of Nano Banana Pro
 
 ---
-last_updated: 2026-06-06
+last_updated: 2026-06-08
