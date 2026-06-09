@@ -9,6 +9,7 @@ wiki/
   ai-agents/       # Agent patterns, evals, ecommerce AI, design workflows
   agency-ai-role/  # AI integrator methodology, second brain, onboarding frameworks
   cloudflare/      # Cloudflare AI platform, MCP, Workers
+  digital-anchor/  # Digital Anchor positioning, buyer language, offer strategy
   design-to-dev/   # Design-to-code pipelines, workflow audits, SIPOC
   forecasts/       # AI scenario forecasts
   interests/       # Case studies and topics of personal interest

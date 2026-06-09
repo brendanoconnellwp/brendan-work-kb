@@ -1,6 +1,6 @@
 # Wiki Index
 
-> Master index for Brendan's Work KB. 43 articles across 10 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
+> Master index for Brendan's Work KB. 45 articles across 11 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
 
 ## By Topic
 
@@ -14,6 +14,7 @@ The role of embedding AI into an agency, and the systems that make it compound.
 ### AI Agents
 Agent patterns, evaluation, e-commerce applications, and design/build workflows.
 - [[AI Agent Landscape 2026]] — state of AI agents: what works, what doesn't, where it's heading
+- [[Claude Code Agent Capabilities]] — Claude Code's agent features: scheduling, hooks, subagents, teams, and SDK
 - [[Agent Evals and Monitoring]] — how to know deployed agents are still working, and catch failures fast
 - [[Agent KPI Frameworks]] — measuring whether agents actually deliver value; what to track and dashboard
 - [[Human-Agent Interface Patterns]] — where and how humans should sit in the loop of agent workflows
@@ -33,6 +34,11 @@ Cloudflare's AI platform, MCP at scale, and agents-as-infrastructure.
 - [[Cloudflare MCP Enterprise Reference Architecture]] — Code Mode and safer/cheaper enterprise MCP
 - [[Project Think Agents as Infrastructure]] — next-gen Agents SDK; why serverless (not containers) is the right base
 - [[EmDash CMS]] — Cloudflare's Astro-native CMS: safer plugins, WordPress migration, and agent-operable content
+
+### Digital Anchor
+Public-safe positioning, buyer language, and service strategy for Digital Anchor.
+- [[Digital Anchor Positioning]] — expert-led web systems studio positioning, offer architecture, and homepage strategy
+- [[Digital Anchor Buyer Language]] — SMB vs technical-buyer messaging, translation rules, and competitor language synthesis
 
 ### Design-to-Dev
 Pipelines and audit frameworks for the design → development handoff.
@@ -74,4 +80,4 @@ Automation platforms and concrete workflows.
 - [[YOYOYO Nano Banana Pro Case Study]] — PORTO ROCHA × Google DeepMind's brand-launch stress-test of Nano Banana Pro
 
 ---
-last_updated: 2026-06-08
+last_updated: 2026-06-09

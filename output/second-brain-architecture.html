@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brendan's Work KB — Second Brain Architecture</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #020617;
+      min-height: 100vh;
+      padding: 2rem;
+      color: white;
+    }
+    .container { max-width: 1280px; margin: 0 auto; }
+    .header { margin-bottom: 2rem; }
+    .header-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
+    .pulse-dot { width: 12px; height: 12px; background: #22d3ee; border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.025em; }
+    .subtitle { color: #94a3b8; font-size: 0.875rem; margin-left: 1.75rem; line-height: 1.5; }
+    .diagram-container { background: rgba(15, 23, 42, 0.5); border-radius: 1rem; border: 1px solid #1e293b; padding: 1.5rem; overflow-x: auto; }
+    svg { width: 100%; min-width: 1120px; display: block; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 2rem; }
+    .card { background: rgba(15, 23, 42, 0.5); border-radius: 0.75rem; border: 1px solid #1e293b; padding: 1.25rem; }
+    .card-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; }
+    .card-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .card-dot.cyan { background: #22d3ee; }
+    .card-dot.emerald { background: #34d399; }
+    .card-dot.violet { background: #a78bfa; }
+    .card-dot.amber { background: #fbbf24; }
+    .card-dot.rose { background: #fb7185; }
+    .card h3 { font-size: 0.875rem; font-weight: 600; }
+    .card ul { list-style: none; color: #94a3b8; font-size: 0.75rem; line-height: 1.5; }
+    .card li { margin-bottom: 0.375rem; }
+    .footer { text-align: center; margin-top: 1.5rem; color: #475569; font-size: 0.75rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-row">
+        <div class="pulse-dot"></div>
+        <h1>Brendan's Work KB — Second Brain Architecture</h1>
+      </div>
+      <p class="subtitle">GitHub-backed Obsidian / LLM-wiki system for research capture, compilation, querying, and reusable output.</p>
+    </div>
+
+    <div class="diagram-container">
+      <svg viewBox="0 0 1120 860" role="img" aria-labelledby="title desc">
+        <title id="title">Brendan's Work KB second brain architecture</title>
+        <desc id="desc">A dark architecture diagram showing input sources flowing through research, raw storage, compilation, wiki index, query and output layers, with GitHub and Obsidian access paths.</desc>
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+          </marker>
+          <marker id="arrowhead-cyan" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#22d3ee" />
+          </marker>
+          <marker id="arrowhead-emerald" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#34d399" />
+          </marker>
+          <marker id="arrowhead-violet" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa" />
+          </marker>
+          <marker id="arrowhead-rose" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#fb7185" />
+          </marker>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+          </pattern>
+          <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+            <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <rect width="100%" height="100%" fill="url(#grid)" />
+
+        <!-- arrows behind components -->
+        <line x1="160" y1="205" x2="224" y2="205" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrowhead-cyan)"/>
+        <text x="192" y="197" fill="#94a3b8" font-size="9" text-anchor="middle">capture</text>
+        <line x1="385" y1="205" x2="448" y2="205" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowhead-emerald)"/>
+        <text x="416" y="197" fill="#94a3b8" font-size="9" text-anchor="middle">distill</text>
+        <line x1="610" y1="205" x2="688" y2="205" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowhead-emerald)"/>
+        <text x="650" y="197" fill="#94a3b8" font-size="9" text-anchor="middle">compile</text>
+        <line x1="850" y1="205" x2="922" y2="205" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowhead-violet)"/>
+        <text x="886" y="197" fill="#94a3b8" font-size="9" text-anchor="middle">navigate</text>
+
+        <path d="M 500 250 L 500 290 Q 500 310 520 310 L 610 310 Q 630 310 630 330 L 630 375" fill="none" stroke="#34d399" stroke-width="1.4" marker-end="url(#arrowhead-emerald)"/>
+        <text x="560" y="300" fill="#94a3b8" font-size="9" text-anchor="middle">wikilinks</text>
+        <path d="M 790 250 L 790 290 Q 790 310 770 310 L 690 310 Q 670 310 670 330 L 670 375" fill="none" stroke="#a78bfa" stroke-width="1.4" marker-end="url(#arrowhead-violet)"/>
+        <text x="735" y="300" fill="#94a3b8" font-size="9" text-anchor="middle">catalog</text>
+
+        <line x1="650" y1="485" x2="650" y2="548" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowhead-violet)"/>
+        <text x="668" y="520" fill="#94a3b8" font-size="9">query</text>
+        <line x1="760" y1="610" x2="835" y2="610" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowhead-emerald)"/>
+        <text x="798" y="602" fill="#94a3b8" font-size="9" text-anchor="middle">save</text>
+        <line x1="460" y1="610" x2="545" y2="610" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrowhead-cyan)"/>
+        <text x="502" y="602" fill="#94a3b8" font-size="9" text-anchor="middle">render</text>
+
+        <path d="M 650 548 C 650 520 540 522 500 486" fill="none" stroke="#fb7185" stroke-width="1.3" stroke-dasharray="5,5" marker-end="url(#arrowhead-rose)"/>
+        <text x="560" y="532" fill="#fb7185" font-size="8" text-anchor="middle">consult first</text>
+        <path d="M 760 590 C 905 560 910 468 910 430" fill="none" stroke="#fb7185" stroke-width="1.3" stroke-dasharray="5,5" marker-end="url(#arrowhead-rose)"/>
+        <text x="875" y="555" fill="#fb7185" font-size="8" text-anchor="middle">update index</text>
+
+        <line x1="650" y1="695" x2="650" y2="758" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="668" y="730" fill="#94a3b8" font-size="9">git</text>
+
+        <!-- Source boundary -->
+        <rect x="30" y="70" width="150" height="270" rx="12" fill="rgba(30, 41, 59, 0.25)" stroke="#94a3b8" stroke-width="1" stroke-dasharray="8,4"/>
+        <text x="42" y="88" fill="#94a3b8" font-size="10" font-weight="600">Input Sources</text>
+        <rect x="50" y="115" width="110" height="54" rx="6" fill="#0f172a"/>
+        <rect x="50" y="115" width="110" height="54" rx="6" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="105" y="137" fill="white" font-size="11" font-weight="600" text-anchor="middle">Web / Docs</text>
+        <text x="105" y="153" fill="#94a3b8" font-size="9" text-anchor="middle">articles, PDFs</text>
+        <rect x="50" y="190" width="110" height="54" rx="6" fill="#0f172a"/>
+        <rect x="50" y="190" width="110" height="54" rx="6" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="105" y="212" fill="white" font-size="11" font-weight="600" text-anchor="middle">Daily Dump</text>
+        <text x="105" y="228" fill="#94a3b8" font-size="9" text-anchor="middle">raw/daily</text>
+        <rect x="50" y="265" width="110" height="54" rx="6" fill="#0f172a"/>
+        <rect x="50" y="265" width="110" height="54" rx="6" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="105" y="287" fill="white" font-size="11" font-weight="600" text-anchor="middle">Work Signals</text>
+        <text x="105" y="303" fill="#94a3b8" font-size="9" text-anchor="middle">agency, AI, WP</text>
+
+        <!-- Repo / vault boundary -->
+        <rect x="220" y="60" width="840" height="650" rx="12" fill="rgba(251, 191, 36, 0.05)" stroke="#fbbf24" stroke-width="1" stroke-dasharray="8,4"/>
+        <text x="236" y="80" fill="#fbbf24" font-size="10" font-weight="600">GitHub repo + Obsidian vault: brendanoconnellwp/brendan-work-kb</text>
+
+        <!-- Capture / raw -->
+        <rect x="240" y="155" width="145" height="100" rx="8" fill="#0f172a"/>
+        <rect x="240" y="155" width="145" height="100" rx="8" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+        <text x="312" y="180" fill="white" font-size="12" font-weight="600" text-anchor="middle">RESEARCH</text>
+        <text x="312" y="199" fill="#94a3b8" font-size="9" text-anchor="middle">fetch + distill</text>
+        <text x="312" y="214" fill="#94a3b8" font-size="9" text-anchor="middle">YAML frontmatter</text>
+        <text x="312" y="235" fill="#34d399" font-size="8" text-anchor="middle">save to raw/articles</text>
+
+        <rect x="448" y="145" width="162" height="120" rx="8" fill="#0f172a"/>
+        <rect x="448" y="145" width="162" height="120" rx="8" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+        <text x="529" y="168" fill="white" font-size="12" font-weight="600" text-anchor="middle">raw/</text>
+        <text x="529" y="190" fill="#94a3b8" font-size="8" text-anchor="middle">• raw/articles</text>
+        <text x="529" y="205" fill="#94a3b8" font-size="8" text-anchor="middle">• raw/daily</text>
+        <text x="529" y="220" fill="#94a3b8" font-size="8" text-anchor="middle">• source material</text>
+        <text x="529" y="243" fill="#a78bfa" font-size="7" text-anchor="middle">local-only / gitignored</text>
+
+        <rect x="688" y="145" width="162" height="120" rx="8" fill="#0f172a"/>
+        <rect x="688" y="145" width="162" height="120" rx="8" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+        <text x="769" y="168" fill="white" font-size="12" font-weight="600" text-anchor="middle">COMPILE</text>
+        <text x="769" y="190" fill="#94a3b8" font-size="8" text-anchor="middle">one concept/article</text>
+        <text x="769" y="205" fill="#94a3b8" font-size="8" text-anchor="middle">clear, informal tone</text>
+        <text x="769" y="220" fill="#94a3b8" font-size="8" text-anchor="middle">[[wikilinks]]</text>
+        <text x="769" y="243" fill="#34d399" font-size="7" text-anchor="middle">~1500 words max</text>
+
+        <rect x="922" y="145" width="118" height="120" rx="8" fill="#0f172a"/>
+        <rect x="922" y="145" width="118" height="120" rx="8" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="981" y="168" fill="white" font-size="12" font-weight="600" text-anchor="middle">Obsidian</text>
+        <text x="981" y="190" fill="#94a3b8" font-size="8" text-anchor="middle">browse graph</text>
+        <text x="981" y="205" fill="#94a3b8" font-size="8" text-anchor="middle">edit notes</text>
+        <text x="981" y="220" fill="#94a3b8" font-size="8" text-anchor="middle">follow links</text>
+        <text x="981" y="243" fill="#22d3ee" font-size="7" text-anchor="middle">vault root</text>
+
+        <!-- Wiki layer -->
+        <rect x="290" y="375" width="420" height="110" rx="10" fill="#0f172a"/>
+        <rect x="290" y="375" width="420" height="110" rx="10" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+        <text x="500" y="399" fill="white" font-size="12" font-weight="600" text-anchor="middle">wiki/ — compiled knowledge layer</text>
+        <text x="500" y="421" fill="#94a3b8" font-size="8" text-anchor="middle">45 articles across 11 topic areas</text>
+        <text x="500" y="441" fill="#94a3b8" font-size="8" text-anchor="middle">AI Agents • Agency AI Role • Cloudflare • Digital Anchor • Design-to-Dev • WordPress</text>
+        <text x="500" y="456" fill="#94a3b8" font-size="8" text-anchor="middle">Team RAG • Tooling • Team Adoption • Forecasts • Interests</text>
+        <text x="500" y="473" fill="#a78bfa" font-size="7" text-anchor="middle">Obsidian-compatible Markdown + [[wikilinks]]</text>
+
+        <rect x="760" y="375" width="180" height="110" rx="8" fill="#0f172a"/>
+        <rect x="760" y="375" width="180" height="110" rx="8" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+        <text x="850" y="399" fill="white" font-size="12" font-weight="600" text-anchor="middle">wiki/_meta/_index.md</text>
+        <text x="850" y="421" fill="#94a3b8" font-size="8" text-anchor="middle">master navigation</text>
+        <text x="850" y="436" fill="#94a3b8" font-size="8" text-anchor="middle">summaries by topic</text>
+        <text x="850" y="451" fill="#94a3b8" font-size="8" text-anchor="middle">updated after compile</text>
+        <text x="850" y="472" fill="#fbbf24" font-size="7" text-anchor="middle">last_updated: 2026-06-09</text>
+
+        <!-- Agent workflow -->
+        <rect x="545" y="548" width="215" height="125" rx="8" fill="#0f172a"/>
+        <rect x="545" y="548" width="215" height="125" rx="8" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+        <text x="652" y="573" fill="white" font-size="12" font-weight="600" text-anchor="middle">Hermes / LLM Agent</text>
+        <text x="652" y="596" fill="#94a3b8" font-size="8" text-anchor="middle">QUERY: consult wiki first</text>
+        <text x="652" y="611" fill="#94a3b8" font-size="8" text-anchor="middle">then research to fill gaps</text>
+        <text x="652" y="626" fill="#94a3b8" font-size="8" text-anchor="middle">file substantial answers back</text>
+        <text x="652" y="649" fill="#34d399" font-size="7" text-anchor="middle">WIKI_PATH + OBSIDIAN_VAULT_PATH</text>
+
+        <rect x="255" y="560" width="205" height="100" rx="8" fill="#0f172a"/>
+        <rect x="255" y="560" width="205" height="100" rx="8" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="358" y="584" fill="white" font-size="12" font-weight="600" text-anchor="middle">OUTPUT/</text>
+        <text x="358" y="606" fill="#94a3b8" font-size="8" text-anchor="middle">generated artifacts</text>
+        <text x="358" y="621" fill="#94a3b8" font-size="8" text-anchor="middle">demos, diagrams, drafts</text>
+        <text x="358" y="642" fill="#22d3ee" font-size="7" text-anchor="middle">save deliverables here</text>
+
+        <rect x="835" y="560" width="180" height="100" rx="8" fill="#0f172a"/>
+        <rect x="835" y="560" width="180" height="100" rx="8" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+        <text x="925" y="584" fill="white" font-size="12" font-weight="600" text-anchor="middle">GitHub Remote</text>
+        <text x="925" y="606" fill="#94a3b8" font-size="8" text-anchor="middle">public repo</text>
+        <text x="925" y="621" fill="#94a3b8" font-size="8" text-anchor="middle">versioned articles</text>
+        <text x="925" y="642" fill="#fbbf24" font-size="7" text-anchor="middle">brendanoconnellwp/brendan-work-kb</text>
+
+        <!-- Security / policy boundary -->
+        <rect x="472" y="533" width="572" height="155" rx="8" fill="transparent" stroke="#fb7185" stroke-width="1" stroke-dasharray="4,4"/>
+        <text x="484" y="548" fill="#fb7185" font-size="8">protocol guardrails: consult wiki first • update index • raw is source material</text>
+
+        <!-- Commit boundary -->
+        <rect x="390" y="760" width="520" height="55" rx="8" fill="#0f172a"/>
+        <rect x="390" y="760" width="520" height="55" rx="8" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+        <text x="650" y="784" fill="white" font-size="12" font-weight="600" text-anchor="middle">Local clone: /c/Users/br_oc/brendan-work-kb</text>
+        <text x="650" y="802" fill="#94a3b8" font-size="8" text-anchor="middle">Git-backed vault: articles, index, and outputs can be reviewed, committed, and pushed</text>
+
+        <!-- Legend: outside all boundary boxes (main repo boundary ends at y=710) -->
+        <text x="30" y="735" fill="white" font-size="10" font-weight="600">Legend</text>
+        <rect x="30" y="748" width="16" height="10" rx="2" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1"/>
+        <text x="52" y="756" fill="#94a3b8" font-size="8">Frontend / human interface</text>
+        <rect x="30" y="765" width="16" height="10" rx="2" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1"/>
+        <text x="52" y="773" fill="#94a3b8" font-size="8">Agent process</text>
+        <rect x="30" y="782" width="16" height="10" rx="2" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1"/>
+        <text x="52" y="790" fill="#94a3b8" font-size="8">Knowledge store</text>
+        <rect x="30" y="799" width="16" height="10" rx="2" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1"/>
+        <text x="52" y="807" fill="#94a3b8" font-size="8">Versioned/cloud artifact</text>
+        <line x1="30" y1="823" x2="46" y2="823" stroke="#fb7185" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="52" y="826" fill="#94a3b8" font-size="8">Protocol / guardrail flow</text>
+      </svg>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot emerald"></div>
+          <h3>Operating Loop</h3>
+        </div>
+        <ul>
+          <li>• RESEARCH captures high-quality sources into raw material.</li>
+          <li>• COMPILE turns raw input into one-concept wiki articles.</li>
+          <li>• QUERY starts from the index and wiki before new research.</li>
+          <li>• OUTPUT stores reusable artifacts, demos, drafts, and diagrams.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot violet"></div>
+          <h3>Knowledge Shape</h3>
+        </div>
+        <ul>
+          <li>• 45 articles across 11 topic areas.</li>
+          <li>• Obsidian-style [[wikilinks]] connect related ideas.</li>
+          <li>• _meta/_index.md is the navigation spine.</li>
+          <li>• Tone stays clear, engaging, practical, and insight-dense.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot amber"></div>
+          <h3>System Boundaries</h3>
+        </div>
+        <ul>
+          <li>• Repo root doubles as the Obsidian vault and LLM wiki path.</li>
+          <li>• GitHub gives version history and portable access.</li>
+          <li>• Raw/source inputs are treated separately from polished wiki pages.</li>
+          <li>• New articles require index updates to keep the brain navigable.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer">Brendan's Work KB • brendanoconnellwp/brendan-work-kb • Generated as output/second-brain-architecture.html + .svg</p>
+  </div>
+</body>
+</html>
