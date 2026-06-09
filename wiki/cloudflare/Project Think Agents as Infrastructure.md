@@ -1,9 +1,9 @@
 ---
 title: "Project Think Agents as Infrastructure"
 source: "https://blog.cloudflare.com/project-think/"
-tags: [cloudflare, agents-sdk, durable-objects, project-think, dynamic-workers, codemode]
+tags: [cloudflare, agents-sdk, durable-objects, project-think, dynamic-workers, code-mode]
 date_added:: 2026-04-21
-last_updated:: 2026-04-21
+last_updated:: 2026-06-09
 ---
 
 # Project Think: Agents as Infrastructure
@@ -105,5 +105,5 @@ The self-authored extensions pattern also maps to a real agency need: a single b
 - Related packages: `@cloudflare/think`, `@cloudflare/codemode`, `@cloudflare/shell`, `@cloudflare/worker-bundler`
 
 ---
-tags: [cloudflare, agents-sdk, durable-objects, project-think, dynamic-workers, codemode]
-last_updated:: 2026-04-21
+tags: [cloudflare, agents-sdk, durable-objects, project-think, dynamic-workers, code-mode]
+last_updated:: 2026-06-09

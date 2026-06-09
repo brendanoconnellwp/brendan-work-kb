@@ -135,6 +135,8 @@ Use cases: CI/CD pipelines, production automation, custom agent apps, batch proc
 - [[AI Agent Landscape 2026]] — where Claude Code fits in the broader agent ecosystem
 - [[Proactive Agent Workflows]] — specific workflows you can build with these capabilities
 - [[Claude-Powered Dev Workflows]] — Claude Code as an agentic dev partner
+- [[Designer-in-Claude Workflow]] — adjacent pattern where non-developers use Claude as the prototyping surface before dev cleanup
+- [[Codex Goal Command for WordPress]] — parallel autonomous-coding workflow for WordPress-specific tasks
 - [[n8n for Agency Ops]] — complements Claude Code for non-code automation
 
 ## Open Questions

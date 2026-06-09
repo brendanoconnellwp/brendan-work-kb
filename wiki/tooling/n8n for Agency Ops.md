@@ -56,6 +56,7 @@ IBM research: agencies combining workflow orchestration with custom AI integrati
 - [[Agency Workflow Audit Framework]] — audit findings directly inform which n8n workflows to build first
 - [[Knowledge Base Permissions and Classification]] — n8n powers the transcript processing pipeline across access tiers
 - [[Getting Agency Teams to Actually Use AI]] — invisible n8n automations are the easiest adoption path
+- [[Cold Email Workflow n8n]] — concrete example of n8n as a marketing/sales automation spine
 
 ## Open Questions
 

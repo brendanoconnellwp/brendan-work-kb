@@ -110,5 +110,5 @@ The bottleneck remains design-system maturity. If the Figma file is a pile of un
 - [Figma Console MCP tools reference](https://docs.figma-console-mcp.southleft.com/tools.md)
 
 ---
-tags: [figma, mcp, design-to-code, design-systems, tokens, agency-workflows]
+tags: [figma, mcp, design-to-code, design-systems, tokens, agency-ops]
 last_updated: 2026-06-08

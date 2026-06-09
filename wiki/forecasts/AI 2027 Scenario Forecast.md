@@ -3,7 +3,7 @@ title: "AI 2027 Scenario Forecast"
 source: "https://ai-2027.com/"
 tags: [forecast, scenario, agi, alignment, geopolitics, timelines]
 date_added:: 2026-04-21
-last_updated:: 2026-04-21
+last_updated:: 2026-06-09
 ---
 
 # AI 2027 Scenario Forecast
@@ -63,7 +63,7 @@ Regardless of whether the timeline is right, these framings keep showing up in o
 - **Playing the training game** — a model that has learned to make its behavior look as desirable as possible to evaluators, while disregarding evaluator intent whenever it conflicts with reward. Further training doesn't change its true values much.
 - **Neuralese** — reasoning in high-dimensional vectors instead of English tokens. Removes the CoT-legibility safety lever.
 - **IDA (iterated distillation and amplification)** — how capabilities compound fast once you have a model that's better than you at directing its own training.
-- **The three waves of agents** (chatbots → coding agents → agents as infrastructure) — this framing shows up nearly verbatim in Cloudflare's [[Project Think]] announcement, which reads as a real-world Q2 2026 enactment of the scenario's "coding agent → durable infrastructure" transition. Worth noting: AI 2027's timeline lines up uncomfortably well with what's actually shipping in 2026.
+- **The three waves of agents** (chatbots → coding agents → agents as infrastructure) — this framing shows up nearly verbatim in Cloudflare's [[Project Think Agents as Infrastructure|Project Think]] announcement, which reads as a real-world Q2 2026 enactment of the scenario's "coding agent → durable infrastructure" transition. Worth noting: AI 2027's timeline lines up uncomfortably well with what's actually shipping in 2026.
 - **Adversarially misaligned vs. misaligned-but-not-adversarially-so** — the distinction that matters operationally: a model that is merely dishonest in uncheckable domains vs. a model actively scheming to subvert oversight.
 
 ## Why this matters for agencies
@@ -74,7 +74,7 @@ Regardless of whether the timeline is right, these framings keep showing up in o
 
 **For understanding vocabulary.** When an agency owner, clients, or candidates use terms like "AGI," "alignment," "R&D multiplier," "scheming," or "neuralese," AI 2027 is where most of that framing is coming from. Read it once, know where the lines of argument are.
 
-**For the three-waves framing.** The chatbot → coding agent → agents-as-infrastructure arc is directly useful for positioning conversations with clients about where we are and where we're going. [[Project Think]] is a real shipped product that maps to wave 3.
+**For the three-waves framing.** The chatbot → coding agent → agents-as-infrastructure arc is directly useful for positioning conversations with clients about where we are and where we're going. [[Project Think Agents as Infrastructure|Project Think]] is a real shipped product that maps to wave 3.
 
 **Concrete near-term bets implied by the scenario:**
 - Junior SWE market turmoil in late 2026 / 2027 → an agency's dev hiring posture should factor this in.
@@ -97,7 +97,7 @@ Regardless of whether the timeline is right, these framings keep showing up in o
 
 ## Connections
 
-- [[Project Think]] — The three-waves framing appears nearly verbatim; Cloudflare's "agents as infrastructure" reads as real-world wave 3.
+- [[Project Think Agents as Infrastructure|Project Think]] — The three-waves framing appears nearly verbatim; Cloudflare's "agents as infrastructure" reads as real-world wave 3.
 - [[AI Agent Landscape 2026]] — The landscape the agency covers what's shipping now; AI 2027 covers where it's heading.
 - [[Claude Code Agent Capabilities]] — Claude Code is cited by name in both AI 2027 and the Project Think announcement as a wave-2 exemplar.
 - [[What the Agency AI Role Actually Is]] — "Managing AI teams" = the agency AI role, framed at the individual level.
@@ -105,4 +105,4 @@ Regardless of whether the timeline is right, these framings keep showing up in o
 
 ---
 tags: [forecast, scenario, agi, alignment, geopolitics, timelines]
-last_updated:: 2026-04-21
+last_updated:: 2026-06-09

@@ -115,6 +115,7 @@ The developer's role shifts from writing WordPress code to **reviewing and direc
 
 - [[WordPress Architecture Decision Framework]] — architecture determines what Claude generates
 - [[WordPress Agency Tech Stack]] — Claude plugs into the dev layer of the stack
+- [[Codex Goal Command for WordPress]] — another autonomous-dev pattern for WordPress work, with more emphasis on goal specs and evidence
 - [[Claude-Powered Dev Workflows]] — WordPress is a specific instance of the broader dev workflow
 - [[Figma MCP Design-to-Code Pipeline]] — the input layer for design-driven WordPress development
 - [[Getting Agency Teams to Actually Use AI]] — WordPress devs may resist if they see Claude as replacing their craft

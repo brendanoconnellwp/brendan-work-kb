@@ -49,3 +49,19 @@ last_updated: YYYY-MM-DD
 ```
 
 Write in a clear, engaging, slightly informal tone. Prioritize insight density over coverage. One concept per article, ~1500 words max before considering a split.
+
+## Public repo hygiene
+
+This repository is public and may be demoed in YouTube videos. Do not add private employer/client operational snapshots, sensitive project details, internal team names, credentials, or unpublished client information. Prefer public/generalizable agency patterns unless Brendan explicitly says the material is safe to publish.
+
+## Tag conventions
+
+Keep tags boring and reusable. Prefer existing canonical tags before creating variants:
+
+- `ai-agents` not `agents`
+- `ecommerce` not `e-commerce`
+- `agency-ops` for agency operations/workflow material
+- `workflow` for generic workflow patterns
+- `code-mode` not `codemode`
+
+Use specific tool/product tags (`cloudflare`, `wordpress`, `figma`, `mcp`, `n8n`, `notion`) when they are central to the article.

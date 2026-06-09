@@ -68,6 +68,7 @@ This is where [[n8n for Agency Ops]] can add a layer — notifications to Slack,
 | **Staging**                   | One-click staging environments       |
 | **Edge caching**              | Host-level or Cloudflare             |
 | **Headless frontend hosting** | Vercel / Netlify / Cloudflare Pages  |
+| **Modern CMS pilots** | [[EmDash CMS]] for Astro/Cloudflare-native content sites where WordPress plugin compatibility is not the main value |
 
 ### Testing & QA
 - **PHPUnit** — PHP unit testing
@@ -114,4 +115,4 @@ This is where [[n8n for Agency Ops]] can add a layer — notifications to Slack,
 ---
 tags: [wordpress, tech-stack, tooling, agency, devops]
 date_added:: 2026-04-04
-last_updated:: 2026-04-04
+last_updated:: 2026-06-09

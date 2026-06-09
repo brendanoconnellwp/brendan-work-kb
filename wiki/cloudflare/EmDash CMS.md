@@ -135,6 +135,7 @@ If that goes well, the next useful test is not another demo. It is a real low-ri
 
 - [[Project Think Agents as Infrastructure]] — both frame Cloudflare infrastructure as the substrate for durable agent-era software.
 - [[Cloudflare MCP Enterprise Reference Architecture]] — EmDash's built-in MCP server is a concrete CMS/content example of scoped tool access.
+- [[Cloudflare AI Platform Unified Inference Layer]] — EmDash belongs in the same Cloudflare pattern: content, tools, and inference becoming agent-operable infrastructure.
 - [[WordPress Agency Tech Stack]] — EmDash belongs in the "modern alternatives / pilot candidates" bucket, not as a default replacement yet.
 - [[WordPress Architecture Decision Framework]] — useful comparison point when deciding WordPress vs Astro/static/headless/EmDash.
 - [[Second Brain Gameplan]] — EmDash's MCP server is another example of content systems becoming agent-operable, not just human-operated.
@@ -146,8 +147,8 @@ If that goes well, the next useful test is not another demo. It is a real low-ri
 - Official docs: https://docs.emdashcms.com/
 - Docs source inspected: `emdash-cms/emdash/docs/src/content/docs`
 - Practical third-party guide: https://emdashcms.dev/
-- Research note: [[2026-06-06-emdash-cms-research]]
+- Research note: `raw/articles/2026-06-06-emdash-cms-research.md`
 
 ---
-tags: [cloudflare, emdash, cms, wordpress, astro, mcp, agents]
-last_updated: 2026-06-06
+tags: [cloudflare, emdash, cms, wordpress, astro, mcp, ai-agents]
+last_updated: 2026-06-09

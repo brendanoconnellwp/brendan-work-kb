@@ -73,6 +73,8 @@ Single, well-configured agents with good tools consistently outperform multi-age
 ## Connections
 
 - [[Claude Code Agent Capabilities]] — deep dive into Claude Code's agent features (the wave-2 exemplar)
+- [[Agent Evals and Monitoring]] — the reliability/observability layer needed once agents leave demos and enter real workflows
+- [[Agent KPI Frameworks]] — the measurement layer for deciding whether deployed agents actually create value
 - [[Project Think Agents as Infrastructure]] — Cloudflare's wave-3 stack; durable execution, sub-agents, execution ladder
 - [[Cloudflare AI Platform Unified Inference Layer]] — model-agnostic inference with agent-specific failover and streaming resume
 - [[Cloudflare MCP Enterprise Reference Architecture]] — the governance reference design, Code Mode, shadow-MCP detection

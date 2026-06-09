@@ -157,6 +157,6 @@ Full stack: all of the above plus custom AI personalization, predictive pricing,
 - See `raw/articles/2026-04-09_ai-copy-optimization-dtc-brands.md` and related files
 
 ---
-tags: [ai-optimization, dtc, e-commerce, martech, agency, full-funnel, client-reference]
+tags: [ai-optimization, dtc, ecommerce, martech, agency, full-funnel, client-reference]
 date_added:: 2026-04-21
 last_updated:: 2026-04-09

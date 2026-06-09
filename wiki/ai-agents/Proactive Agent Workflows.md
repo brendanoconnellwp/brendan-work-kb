@@ -130,6 +130,6 @@ Net effect: the workflows above stop being "things I run on my machine" and star
 - See `raw/articles/2026-04-09_personal-agent-workflows-power-users.md` for full source list
 
 ---
-tags: [ai-agents, workflows, productivity, automation, personal, scheduling]
+tags: [ai-agents, workflow, productivity, automation, personal, scheduling]
 date_added:: 2026-04-21
 last_updated:: 2026-04-21

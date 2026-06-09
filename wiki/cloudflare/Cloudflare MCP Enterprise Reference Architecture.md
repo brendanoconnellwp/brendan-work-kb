@@ -3,7 +3,7 @@ title: "Cloudflare MCP Enterprise Reference Architecture"
 source: "https://blog.cloudflare.com/enterprise-mcp/"
 tags: [cloudflare, mcp, security, enterprise, governance, code-mode, ai-gateway]
 date_added:: 2026-04-21
-last_updated:: 2026-04-21
+last_updated:: 2026-06-09
 ---
 
 # Cloudflare MCP Enterprise Reference Architecture
@@ -65,7 +65,7 @@ async () => {
 
 **Real numbers from Cloudflare's internal portal:** 52 tools across 4 MCP servers → 9,400 tokens of definitions → collapses to 2 portal tools consuming ~600 tokens. **94% reduction.** And the cost stays fixed as you connect more servers — it doesn't grow with tool count.
 
-Why it works: the model discovers tools on demand (only the definitions it needs enter context), and chains calls in a single JS program (one tool invocation instead of N round-trips). Runs in a sandboxed Dynamic Worker. Pairs with the same Code Mode insight in [[Project Think]].
+Why it works: the model discovers tools on demand (only the definitions it needs enter context), and chains calls in a single JS program (one tool invocation instead of N round-trips). Runs in a sandboxed Dynamic Worker. Pairs with the same Code Mode insight in [[Project Think Agents as Infrastructure|Project Think]].
 
 Activation is a URL query param: `?codemode=search_and_execute`.
 
@@ -112,7 +112,7 @@ The related argument Cloudflare makes, worth adopting: **every organization shou
 
 ## Connections
 
-- [[Project Think]] — Same Code Mode insight, applied at the in-agent tool-execution layer.
+- [[Project Think Agents as Infrastructure|Project Think]] — Same Code Mode insight, applied at the in-agent tool-execution layer.
 - [[Cloudflare AI Platform Unified Inference Layer]] — AI Gateway is the model-layer sibling to MCP server portals.
 - [[Team RAG Access Control]] — Equivalent governance thinking for RAG; keep the two designs aligned.
 - [[AI Agent Landscape 2026]] — MCP is becoming the agent-to-tool protocol; enterprise MCP is how you actually ship it.
@@ -132,4 +132,4 @@ The related argument Cloudflare makes, worth adopting: **every organization shou
 
 ---
 tags: [cloudflare, mcp, security, enterprise, governance, code-mode, ai-gateway]
-last_updated:: 2026-04-21
+last_updated:: 2026-06-09

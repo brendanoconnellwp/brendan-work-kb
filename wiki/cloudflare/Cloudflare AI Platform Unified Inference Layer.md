@@ -1,9 +1,9 @@
 ---
 title: "Cloudflare AI Platform Unified Inference Layer"
 source: "https://blog.cloudflare.com/ai-platform/"
-tags: [cloudflare, ai-gateway, workers-ai, agents, inference, multi-model]
+tags: [cloudflare, ai-gateway, workers-ai, ai-agents, inference, multi-model]
 date_added:: 2026-04-21
-last_updated:: 2026-04-21
+last_updated:: 2026-06-09
 ---
 
 # Cloudflare AI Platform: Unified Inference Layer
@@ -14,7 +14,7 @@ last_updated:: 2026-04-21
 
 The core premise: modern apps — especially agents — call more than one model. A customer-support agent might use a cheap model to classify intent, a reasoning model to plan, and a lightweight model to execute. Tying your architecture to a single provider is a mistake that compounds under agent workloads, where one slow or failed call cascades into every downstream step.
 
-Cloudflare's answer is to collapse the provider layer into a single binding: `env.AI.run('anthropic/claude-opus-4-6', ...)` calls any model from any of their supported providers through the same path you already use for [[Workers AI]]. Credentials, spend, and logging all centralize at AI Gateway.
+Cloudflare's answer is to collapse the provider layer into a single binding: `env.AI.run('anthropic/claude-opus-4-6', ...)` calls any model from any of their supported providers through the same path you already use for Workers AI. Credentials, spend, and logging all centralize at AI Gateway.
 
 ## What's actually new
 
@@ -31,7 +31,7 @@ Three agent-specific design choices, all in the announcement:
 
 2. **Time-to-first-token over total latency.** Cloudflare's 330-city network means Workers AI → AI Gateway traffic never leaves the same machine — it's a process hop, not a network hop. For live agents, user-perceived speed is TTFT, not total inference time, and shaving 50ms off first-token time materially changes the feel.
 
-3. **Streaming resume.** AI Gateway buffers streaming responses independently of the agent's lifetime. If the agent is evicted or the client drops mid-stream, the agent can reconnect and retrieve the already-generated tokens — no duplicate inference call, no paying twice for the same output. This pairs directly with the Agents SDK's checkpointing (see [[Project Think]]).
+3. **Streaming resume.** AI Gateway buffers streaming responses independently of the agent's lifetime. If the agent is evicted or the client drops mid-stream, the agent can reconnect and retrieve the already-generated tokens — no duplicate inference call, no paying twice for the same output. This pairs directly with the Agents SDK's checkpointing (see [[Project Think Agents as Infrastructure|Project Think]]).
 
 Point 3 is the subtle one. It moves "streaming inference" from a session-lifetime concern to an infrastructure concern, which is exactly the design shift Cloudflare is making across the agent stack.
 
@@ -43,10 +43,10 @@ For agency work: if a client wants observability over their AI spend across a mu
 
 ## Connections
 
-- [[Project Think]] — The agent framework that this inference layer feeds. AI Gateway failover + streaming resume are paired with Project Think's fiber checkpointing.
+- [[Project Think Agents as Infrastructure|Project Think]] — The agent framework that this inference layer feeds. AI Gateway failover + streaming resume are paired with Project Think's fiber checkpointing.
 - [[Cloudflare MCP Enterprise Reference Architecture]] — AI Gateway also sits between MCP clients and LLMs for cost control and provider switching.
 - [[AI Agent Landscape 2026]] — Slots into the "where to host agents" question; Cloudflare is making a full-stack play.
-- [[AI Agent Platforms Landscape 2026]] (if exists) — competitive comparison with AWS Bedrock, Azure AI Foundry, Replicate (now absorbed), LangServe.
+- [[AI Agent Landscape 2026]] — competitive comparison with AWS Bedrock, Azure AI Foundry, Replicate (now absorbed), LangServe.
 
 ## Open Questions
 
@@ -61,5 +61,5 @@ For agency work: if a client wants observability over their AI spend across a mu
 - Source: https://blog.cloudflare.com/ai-platform/ (2026-04-16, Agents Week)
 
 ---
-tags: [cloudflare, ai-gateway, workers-ai, agents, inference, multi-model]
-last_updated:: 2026-04-21
+tags: [cloudflare, ai-gateway, workers-ai, ai-agents, inference, multi-model]
+last_updated:: 2026-06-09
