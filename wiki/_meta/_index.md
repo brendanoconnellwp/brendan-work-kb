@@ -1,6 +1,6 @@
 # Wiki Index
 
-> Master index for Brendan's Work KB. 45 articles across 11 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
+> Master index for Brendan's Work KB. 46 articles across 11 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
 
 ## By Topic
 
@@ -69,6 +69,7 @@ Architecture for team-shared retrieval over a knowledge base.
 Automation platforms and concrete workflows.
 - [[n8n for Agency Ops]] — n8n as the automation layer for agency operations
 - [[Cold Email Workflow n8n]] — an AI cold-email pipeline, and the open-tracking lesson that makes it work
+- [[Secret Rotation Tools Doppler and Infisical]] — Doppler vs Infisical for secrets management, rotation, dynamic secrets, and agency/client workflows
 
 ### Team Adoption
 - [[Getting Agency Teams to Actually Use AI]] — the human side: getting non-technical teams to change how they work
@@ -80,4 +81,4 @@ Automation platforms and concrete workflows.
 - [[YOYOYO Nano Banana Pro Case Study]] — PORTO ROCHA × Google DeepMind's brand-launch stress-test of Nano Banana Pro
 
 ---
-last_updated: 2026-06-09
+last_updated: 2026-06-16
