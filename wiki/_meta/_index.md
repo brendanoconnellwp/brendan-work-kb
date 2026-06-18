@@ -80,5 +80,15 @@ Automation platforms and concrete workflows.
 ### Interests
 - [[YOYOYO Nano Banana Pro Case Study]] — PORTO ROCHA × Google DeepMind's brand-launch stress-test of Nano Banana Pro
 
+### Reading Logs (added 2026-06-17)
+> Deep-dive research briefs for offline reading. Opinionated, practice-focused essays on the mid-2026 landscape across 6 topics.
+
+- [[01-mcp-and-agent-patterns]] — MCP vs ACP, production agent patterns, server ecosystem, code examples
+- [[02-cloudflare-agent-stack]] — Durable Objects, Workflows, AI Gateway, Code Mode's 94% token reduction
+- [[03-rag-company-brain-architecture]] — Vector DB showdown, hybrid retrieval, Notion+Obsidian dual brain
+- [[04-design-to-dev-workflows]] — Figma MCP, token extraction, Designer-in-Claude, WordPress patterns
+- [[05-agent-commerce-premium-brands]] — ACP vs UCP, Perplexity/Operator/Rabbit R1, premium brand defense
+- [[06-anti-slop-design-taste]] — Structural constraints, the Third Pass, editorial principles, anti-slop techniques
+
 ---
-last_updated: 2026-06-16
+last_updated: 2026-06-17
