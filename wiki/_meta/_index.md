@@ -34,6 +34,7 @@ Cloudflare's AI platform, MCP at scale, and agents-as-infrastructure.
 - [[Cloudflare MCP Enterprise Reference Architecture]] — Code Mode and safer/cheaper enterprise MCP
 - [[Project Think Agents as Infrastructure]] — next-gen Agents SDK; why serverless (not containers) is the right base
 - [[EmDash CMS]] — Cloudflare's Astro-native CMS: safer plugins, WordPress migration, and agent-operable content
+- [[Cloudflare Project Ideas]] — 13 project ideas to build and demo on CF: from Discord bots and AI search engines to agency monitoring and personal utilities
 
 ### Digital Anchor
 Public-safe positioning, buyer language, and service strategy for Digital Anchor.

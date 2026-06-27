@@ -41,8 +41,6 @@ The repo is both a GitHub-backed Obsidian vault and an LLM-readable wiki. The ba
 
 ![Second brain architecture diagram](output/second-brain-architecture.svg)
 
-There is also an HTML version of the diagram at [`output/second-brain-architecture.html`](output/second-brain-architecture.html).
-
 ## Links
 
 - YouTube: [youtube.com/@BrendanOConnellWP](https://www.youtube.com/@BrendanOConnellWP)

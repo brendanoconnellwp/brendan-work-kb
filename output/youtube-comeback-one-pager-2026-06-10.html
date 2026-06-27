@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>What I’ve Been Building Lately</title>
+<style>
+  :root {
+    --bg: #0b1020;
+    --panel: #111936;
+    --text: #f4f7fb;
+    --muted: #aeb9cc;
+    --line: rgba(255,255,255,.12);
+    --accent: #79ffe1;
+    --accent-2: #9db7ff;
+    --warm: #ffd28a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; background: radial-gradient(circle at top left, rgba(121,255,225,.18), transparent 34%), radial-gradient(circle at 80% 15%, rgba(157,183,255,.16), transparent 30%), var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif; }
+  body { padding: 20px; }
+  .page { max-width: 1400px; min-height: calc(100vh - 40px); margin: 0 auto; display: grid; grid-template-columns: 1.08fr .92fr; gap: 20px; }
+  .card { background: linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.035)); border: 1px solid var(--line); border-radius: 24px; box-shadow: 0 26px 80px rgba(0,0,0,.35); backdrop-filter: blur(18px); overflow: hidden; }
+  .hero { padding: 26px 38px 22px; display: flex; flex-direction: column; gap: 15px; }
+  .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .14em; font-weight: 800; font-size: 12px; }
+  h1 { margin: 0; font-size: clamp(40px, 4vw, 61px); line-height: .94; letter-spacing: -.055em; }
+  .dek { color: var(--muted); font-size: 18px; line-height: 1.28; max-width: 940px; margin: 0; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .stat { background: rgba(0,0,0,.18); border: 1px solid var(--line); border-radius: 18px; padding: 14px; }
+  .stat strong { display: block; font-size: 30px; letter-spacing: -.04em; }
+  .stat span { color: var(--muted); font-size: 12.5px; line-height: 1.25; }
+  .section { padding: 22px 26px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .item { padding: 14px 16px; border-radius: 16px; border: 1px solid var(--line); background: rgba(255,255,255,.045); }
+  .item h3 { margin: 0 0 6px; font-size: 15.5px; letter-spacing: -.02em; }
+  .item p { margin: 0; color: var(--muted); font-size: 13.5px; line-height: 1.34; }
+  .quote { margin-top: auto; background: linear-gradient(135deg, rgba(121,255,225,.12), rgba(157,183,255,.11)); border-top: 1px solid var(--line); padding: 22px 38px; font-size: 24px; line-height: 1.12; letter-spacing: -.04em; font-weight: 850; }
+  .side { display: flex; flex-direction: column; gap: 20px; }
+  .feedback { padding: 26px 30px; }
+  .feedback h2 { font-size: 34px; line-height: 1; letter-spacing: -.05em; margin: 0 0 8px; }
+  .feedback > p { color: var(--muted); margin: 0 0 14px; font-size: 16px; }
+  ol { margin: 0; padding-left: 0; list-style: none; display: grid; gap: 9px; }
+  li { display: grid; grid-template-columns: 32px 1fr; align-items: start; gap: 10px; padding: 10px 12px; border-radius: 15px; background: rgba(255,255,255,.05); border: 1px solid var(--line); }
+  .num { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; color: #09111e; background: var(--accent); font-weight: 900; }
+  li strong { display: block; font-size: 15px; margin-bottom: 2px; }
+  li span { color: var(--muted); font-size: 13px; line-height: 1.25; }
+  .cta { background: linear-gradient(135deg, rgba(255,210,138,.16), rgba(121,255,225,.08)); padding: 22px 30px; }
+  .cta h2 { margin: 0 0 8px; font-size: 26px; letter-spacing: -.04em; }
+  .cta p { margin: 0; color: var(--text); font-size: 18px; line-height: 1.22; }
+  .small { color: var(--muted); font-size: 12px; padding: 0 4px; }
+  @media (max-width: 1000px) { body { padding: 14px; } .page { grid-template-columns: 1fr; } .grid, .stats { grid-template-columns: 1fr; } h1 { font-size: 54px; } }
+</style>
+</head>
+<body>
+  <main class="page">
+    <section class="card hero">
+      <div class="eyebrow">Channel reset · June 2026</div>
+      <h1>What I’ve been building lately</h1>
+      <p class="dek">I’ve been behind on videos, but not idle. A lot of the work has shifted from “talking about tools” to building memory systems, CMS experiments, agent workflows, and a public knowledge base behind the work.</p>
+      <div class="stats">
+        <div class="stat"><strong>45</strong><span>public KB articles across 11 topic areas</span></div>
+        <div class="stat"><strong>5+</strong><span>CMS paths: WordPress, Sveltia, Keystatic, TinaCMS, EmDash</span></div>
+        <div class="stat"><strong>3</strong><span>memory layers: chats, persistent memory, LLM wiki</span></div>
+      </div>
+      <div class="section" style="padding:0;">
+        <div class="grid">
+          <div class="item"><h3>Hermes as an operating system</h3><p>Persistent memory, session search, skills, cron jobs, and Mnemosyne-style recall — not just one-off chatbot sessions.</p></div>
+          <div class="item"><h3>Public second brain</h3><p>A Git/Obsidian LLM wiki for AI agents, WordPress, Cloudflare, Team RAG, design-to-dev, tooling, and reusable frameworks.</p></div>
+          <div class="item"><h3>Modern CMS experiments</h3><p>WordPress is still central, but I’m testing Astro, Cloudflare, Sveltia, Keystatic, TinaCMS, and EmDash CMS.</p></div>
+          <div class="item"><h3>Practical agent workflows</h3><p>Claude Code, Codex, Figma MCP, n8n, Team RAG, evals, monitoring, and human-in-loop patterns — focused on real work, not demos.</p></div>
+        </div>
+      </div>
+      <div class="quote">The theme: start with the broken workflow, then decide whether the fix is memory, CMS, automation, an agent, RAG system — or just a better process.</div>
+    </section>
+
+    <aside class="side">
+      <section class="card feedback">
+        <h2>What should I make next?</h2>
+        <p>Comment with a number — or tell me the actual problem you’re trying to solve.</p>
+        <ol>
+          <li><div class="num">1</div><div><strong>Hermes + persistent memory</strong><span>Memory, session search, skills, cron jobs, Mnemosyne-style recall.</span></div></li>
+          <li><div class="num">2</div><div><strong>Second brain / LLM wiki setup</strong><span>Obsidian, Git, agents, turning chats into durable notes.</span></div></li>
+          <li><div class="num">3</div><div><strong>WordPress + modern CMS workflows</strong><span>Sveltia, Keystatic, TinaCMS, EmDash, Astro, Cloudflare.</span></div></li>
+          <li><div class="num">4</div><div><strong>WordPress + AI dev workflows</strong><span>Claude Code, Codex, safer supervised loops.</span></div></li>
+          <li><div class="num">5</div><div><strong>Cloudflare + CMS experiments</strong><span>Workers, Pages, EmDash, agent-operable content.</span></div></li>
+          <li><div class="num">6</div><div><strong>Figma → code workflows</strong><span>MCP, tokens, design-system APIs, drift audits.</span></div></li>
+          <li><div class="num">7</div><div><strong>Agency / SMB automation</strong><span>n8n, forms, inboxes, reports, Notion/CRM workflows.</span></div></li>
+          <li><div class="num">8</div><div><strong>Team RAG / company brain</strong><span>Permissions, ingestion, retrieval, Notion vs Obsidian.</span></div></li>
+        </ol>
+      </section>
+      <section class="card cta">
+        <h2>I’m getting back in the swing.</h2>
+        <p>I want the next videos to be useful: fewer hype takes, more real workflows, mistakes, builds, and repeatable processes.</p>
+      </section>
+      <div class="small">Prepared from recent Hermes chats and Brendan’s public work KB. Keep private client/employer details out of screen recordings.</div>
+    </aside>
+  </main>
+</body>
+</html>
