@@ -72,6 +72,7 @@ Automation platforms and concrete workflows.
 - [[n8n for Agency Ops]] — n8n as the automation layer for agency operations
 - [[Cold Email Workflow n8n]] — an AI cold-email pipeline, and the open-tracking lesson that makes it work
 - [[Secret Rotation Tools Doppler and Infisical]] — Doppler vs Infisical for secrets management, rotation, dynamic secrets, and agency/client workflows
+- [[HyperFrames]] — render video from HTML with GSAP timelines, driven by agent prompts
 
 ### Team Adoption
 - [[Getting Agency Teams to Actually Use AI]] — the human side: getting non-technical teams to change how they work
