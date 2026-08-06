@@ -30,12 +30,15 @@ Agent patterns, evaluation, e-commerce applications, and design/build workflows.
 
 ### Cloudflare
 Cloudflare's AI platform, MCP at scale, and agents-as-infrastructure.
+- [[Cloudflare OS]] — open-source agent workspace with sandboxed gadgets, async-approval Gatekeepers, and Workers-native architecture (v2, August 2026)
 - [[Cloudflare AI Platform Unified Inference Layer]] — the inference layer designed for agents
 - [[Cloudflare MCP Enterprise Reference Architecture]] — Code Mode and safer/cheaper enterprise MCP
 - [[Project Think Agents as Infrastructure]] — next-gen Agents SDK; why serverless (not containers) is the right base
 - [[EmDash CMS]] — Cloudflare's Astro-native CMS: safer plugins, WordPress migration, and agent-operable content
 - [[Cloudflare Project Ideas]] — 13 project ideas to build and demo on CF: from Discord bots and AI search engines to agency monitoring and personal utilities
 - [[Support Ticket Orchestrator Template]] — composable multi-agent template with hot-swappable adapters for CRM, knowledge base, email delivery, and more
+- [[Agents Week 2026]] — Cloudflare's annual agent infrastructure deep-dive: @cloudflare/computer, cross-language RPC, TCP/gRPC
+- [[Cloudflare Computer Agent Runtime]] — @cloudflare/computer: give every agent its own workspace VFS + isolates/containers, launched Agents Week 2026
 
 ### Digital Anchor
 Public-safe positioning, buyer language, and service strategy for Digital Anchor.
@@ -95,4 +98,4 @@ Automation platforms and concrete workflows.
 - [[06-anti-slop-design-taste]] — Structural constraints, the Third Pass, editorial principles, anti-slop techniques
 
 ---
-last_updated: 2026-06-17
+last_updated: 2026-08-03
