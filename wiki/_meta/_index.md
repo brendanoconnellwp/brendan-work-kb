@@ -37,7 +37,7 @@ Cloudflare's AI platform, MCP at scale, and agents-as-infrastructure.
 - [[EmDash CMS]] — Cloudflare's Astro-native CMS: safer plugins, WordPress migration, and agent-operable content
 - [[Cloudflare Project Ideas]] — 13 project ideas to build and demo on CF: from Discord bots and AI search engines to agency monitoring and personal utilities
 - [[Support Ticket Orchestrator Template]] — composable multi-agent template with hot-swappable adapters for CRM, knowledge base, email delivery, and more
-- [[Agents Week 2026]] — Cloudflare's annual agent infrastructure deep-dive: @cloudflare/computer, cross-language RPC, TCP/gRPC
+- [[Agents Week 2026]] — Cloudflare's annual agent infrastructure week: @cloudflare/computer, ADLC, Cloudflare Agents, Agent Access Model, WriteGuard, AI Search, Agentic Internet, OS, and more
 - [[Cloudflare Computer Agent Runtime]] — @cloudflare/computer: give every agent its own workspace VFS + isolates/containers, launched Agents Week 2026
 
 ### Digital Anchor
@@ -98,4 +98,4 @@ Automation platforms and concrete workflows.
 - [[06-anti-slop-design-taste]] — Structural constraints, the Third Pass, editorial principles, anti-slop techniques
 
 ---
-last_updated: 2026-08-03
+last_updated: 2026-08-06
