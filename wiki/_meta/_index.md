@@ -1,6 +1,6 @@
 # Wiki Index
 
-> Master index for Brendan's Work KB. 46 articles across 11 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
+> Master index for Brendan's Work KB. 50 articles across 11 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
 
 ## By Topic
 
@@ -72,6 +72,9 @@ Architecture for team-shared retrieval over a knowledge base.
 
 ### Tooling
 Automation platforms and concrete workflows.
+- [[TanStack AI Agent Ecosystem]] — TanStack's AI SDK, MCP CLI, Intent skill-shipping tool, and Workflow durable execution engine
+- [[Pi Coding Agent]] — the #1 open-source coding agent (★87K): multi-model, extensible, with Convex-driven model comparison
+- [[RepoPrompt Context Engineering]] — native macOS app for building focused, reviewable prompts for AI coding agents
 - [[n8n for Agency Ops]] — n8n as the automation layer for agency operations
 - [[Cold Email Workflow n8n]] — an AI cold-email pipeline, and the open-tracking lesson that makes it work
 - [[Composio Tool Integration Platform]] — 500+ tool integrations with managed auth, MCP-native execution, no .env files
@@ -96,6 +99,7 @@ Automation platforms and concrete workflows.
 - [[04-design-to-dev-workflows]] — Figma MCP, token extraction, Designer-in-Claude, WordPress patterns
 - [[05-agent-commerce-premium-brands]] — ACP vs UCP, Perplexity/Operator/Rabbit R1, premium brand defense
 - [[06-anti-slop-design-taste]] — Structural constraints, the Third Pass, editorial principles, anti-slop techniques
+- [[07-agency-ai-services-pricing-2026]] — Agency AI pricing models, team adoption playbook, and design-to-dev pipeline benchmarks (Aug 2026)
 
 ---
-last_updated: 2026-08-06
+last_updated: 2026-08-15
