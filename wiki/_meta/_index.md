@@ -1,6 +1,6 @@
 # Wiki Index
 
-> Master index for Brendan's Work KB. 50 articles across 11 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
+> Master index for Brendan's Work KB. 51 articles across 11 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
 
 ## By Topic
 
@@ -14,6 +14,7 @@ The role of embedding AI into an agency, and the systems that make it compound.
 ### AI Agents
 Agent patterns, evaluation, e-commerce applications, and design/build workflows.
 - [[AI Agent Landscape 2026]] — state of AI agents: what works, what doesn't, where it's heading
+- [[Change Desk Plan-Approve-Build Pipeline]] — Notion card → AI plan → human approval → AI build → dev preview; ~$0.20 and 4 min per client site change
 - [[Claude Code Agent Capabilities]] — Claude Code's agent features: scheduling, hooks, subagents, teams, and SDK
 - [[Agent Evals and Monitoring]] — how to know deployed agents are still working, and catch failures fast
 - [[Agent KPI Frameworks]] — measuring whether agents actually deliver value; what to track and dashboard
@@ -102,4 +103,4 @@ Automation platforms and concrete workflows.
 - [[07-agency-ai-services-pricing-2026]] — Agency AI pricing models, team adoption playbook, and design-to-dev pipeline benchmarks (Aug 2026)
 
 ---
-last_updated: 2026-08-15
+last_updated: 2026-10-16
