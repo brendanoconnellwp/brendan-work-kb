@@ -1,6 +1,6 @@
 # Wiki Index
 
-> Master index for Brendan's Work KB. 51 articles across 11 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
+> Master index for Brendan's Work KB. 55 articles across 11 topic areas. Companion to [YouTube](https://www.youtube.com/@BrendanOConnellWP) and [brendan-oconnell.com](https://brendan-oconnell.com/).
 
 ## By Topic
 
@@ -35,11 +35,15 @@ Cloudflare's AI platform, MCP at scale, and agents-as-infrastructure.
 - [[Cloudflare AI Platform Unified Inference Layer]] — the inference layer designed for agents
 - [[Cloudflare MCP Enterprise Reference Architecture]] — Code Mode and safer/cheaper enterprise MCP
 - [[Project Think Agents as Infrastructure]] — next-gen Agents SDK; why serverless (not containers) is the right base
-- [[EmDash CMS]] — Cloudflare's Astro-native CMS: safer plugins, WordPress migration, and agent-operable content
-- [[Cloudflare Project Ideas]] — 13 project ideas to build and demo on CF: from Discord bots and AI search engines to agency monitoring and personal utilities
-- [[Support Ticket Orchestrator Template]] — composable multi-agent template with hot-swappable adapters for CRM, knowledge base, email delivery, and more
-- [[Agents Week 2026]] — Cloudflare's annual agent infrastructure week: @cloudflare/computer, ADLC, Cloudflare Agents, Agent Access Model, WriteGuard, AI Search, Agentic Internet, OS, and more
-- [[Cloudflare Computer Agent Runtime]] — @cloudflare/computer: give every agent its own workspace VFS + isolates/containers, launched Agents Week 2026
+- [[EmDash CMS]] — Cloudflare's Astro-native CMS: safer plugins, WordPress migration, agent-operable content (updated 1.0, Sept 2026)
+- [[Cloudflare Project Ideas]] — 13 project ideas to build and demo on CF
+- [[Support Ticket Orchestrator Template]] — composable multi-agent template with hot-swappable adapters
+- [[Agents Week 2026]] — Cloudflare's annual agent infrastructure week
+- [[Cloudflare Computer Agent Runtime]] — @cloudflare/computer: give every agent its own workspace VFS
+- [[cf CLI]] — new agentic CLI covering the entire Cloudflare API, replaces Wrangler (Birthday Week 2026)
+- [[Forge Generation Pipeline]] — open-source pipeline for generating SDKs, CLIs, docs from OpenAPI (Birthday Week 2026)
+- [[VoidZero JavaScript Toolchain]] — Oxc, Vitest 5, Vite+ 1.0, Oxlint/Oxfmt — Cloudflare's JS toolchain (Birthday Week 2026)
+- [[Kitesurf Browser]] — Workers-native browser for AI agents with WebMCP (Birthday Week 2026 update)
 
 ### Digital Anchor
 Public-safe positioning, buyer language, and service strategy for Digital Anchor.
@@ -73,11 +77,14 @@ Architecture for team-shared retrieval over a knowledge base.
 
 ### Tooling
 Automation platforms and concrete workflows.
+- [[hermes-agent-features]] — Hermes Agent capabilities: memory, MCP, computer use, scheduling, multi-agent
+- [[composio-mcp-hermes]] — Composio MCP: 500+ SaaS integrations with managed auth in Hermes
 - [[TanStack AI Agent Ecosystem]] — TanStack's AI SDK, MCP CLI, Intent skill-shipping tool, and Workflow durable execution engine
 - [[Pi Coding Agent]] — the #1 open-source coding agent (★87K): multi-model, extensible, with Convex-driven model comparison
 - [[RepoPrompt Context Engineering]] — native macOS app for building focused, reviewable prompts for AI coding agents
 - [[n8n for Agency Ops]] — n8n as the automation layer for agency operations
 - [[Cold Email Workflow n8n]] — an AI cold-email pipeline, and the open-tracking lesson that makes it work
+- [[Change Desk Pattern]] — Notion-driven CI pipeline: describe a change request, AI plans and builds on dev, human reviews and ships
 - [[Composio Tool Integration Platform]] — 500+ tool integrations with managed auth, MCP-native execution, no .env files
 - [[Secret Rotation Tools Doppler and Infisical]] — Doppler vs Infisical for secrets management, rotation, dynamic secrets, and agency/client workflows
 - [[HyperFrames]] — render video from HTML with GSAP timelines, driven by agent prompts
